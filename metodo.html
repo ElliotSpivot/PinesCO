@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -184,4 +185,192 @@
   </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venta de Método</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Estilos generales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar los elementos */
+  position: relative;
+}
+    /* Contenedor del producto */
+    .product-container {
+      width: 90%;
+      max-width: 600px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-container img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer; /* Cambia el cursor al pasar por la imagen */
+      transition: transform 0.3s ease;
+    }
+
+    .product-container img:hover {
+      transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+    }
+
+    .product-container h1 {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #2d9cdb;
+    }
+
+    .product-container p {
+      font-size: 18px;
+      margin: 15px 0;
+      color: #555;
+    }
+
+    .product-container .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2d9cdb;
+      margin-bottom: 20px;
+    }
+
+    .product-container .whatsapp-button {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-container .whatsapp-button:hover {
+      background-color: #128c7e;
+    }
+
+    /* Estilo para la imagen en pantalla completa */
+    .fullscreen-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      display: none; /* Oculto por defecto */
+    }
+
+    .fullscreen-image img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+    }
+
+    .fullscreen-image .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .back-icon {
+  cursor: pointer;
+  font-size: 30px;
+  color: #2d9cdb;
+  position: absolute;
+  top: 50px; /* Ajuste debajo del texto "Pin 20.000" */
+  left: 20px;
+  transition: color 0.3s;
+}
+
+.back-icon:hover {
+  color: #128c7e; /* Efecto hover en el ícono */
+}
+  </style>
+</head>
+<body>
+    <i class="fas fa-arrow-left back-icon" onclick="goBack()"></i>
+
+  <div class="product-container">
+    <img src="https://i.postimg.cc/8csF1D2g/metodo.jpg" alt="Método de venta" id="product-image">
+    <h1>Venta de Método</h1>
+    <p>¿Te gustaría venden pines y ganar comisión por cada venta como hacemos en esta página? Podrás conseguir todo lo que ves en la imagen pero mas barato (con solo decir que el pin de netflix de 50k lo puedes comprar en 30k), ¿Qué esperas para empezar a ganar por vender pines? <br><br>
+    El <b>software</b> viene tanto para PC como para dispositivos Móviles, se le incluye guía de instalación y guía de uso, 2 meses de Garantía.
+    </p> <br>
+    <h3>Una vez pagado, envía el comprobante dando click en el botón:</h3>
+    <p>
+        
+            <b>Nequi:</b> 3153997024 <br>
+            <b>Daviplata:</b> 3153997024 <br> (si usas llave: @PLATA3153997024) <br>
+            <b>Llave:</b> 3153997024
+        
+    </p>
+    <p class="price">$350.000</p>
+    <a href="https://wa.me/573502775751" class="whatsapp-button" target="_blank">Enviar Comprobante</a>
+  </div>
+
+  <!-- Imagen en pantalla completa -->
+  <div class="fullscreen-image" id="fullscreen-image">
+    <span class="close" id="close-fullscreen">&times;</span>
+    <img src="https://i.postimg.cc/8csF1D2g/metodo.jpg" alt="Método de venta en pantalla completa">
+  </div>
+
+  <script>
+    // Elementos
+    const productImage = document.getElementById('product-image');
+    const fullscreenImage = document.getElementById('fullscreen-image');
+    const closeFullscreen = document.getElementById('close-fullscreen');
+
+    // Mostrar imagen en pantalla completa
+    productImage.addEventListener('click', () => {
+      fullscreenImage.style.display = 'flex';
+    });
+
+    // Cerrar pantalla completa
+    closeFullscreen.addEventListener('click', () => {
+      fullscreenImage.style.display = 'none';
+    });
+
+    // Cerrar pantalla completa al hacer clic fuera de la imagen
+    fullscreenImage.addEventListener('click', (e) => {
+      if (e.target === fullscreenImage) {
+        fullscreenImage.style.display = 'none';
+      }
+    });
+
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+>>>>>>> ebaba4661013008794cf92f4c0a449aa4aff1b76
 </html>

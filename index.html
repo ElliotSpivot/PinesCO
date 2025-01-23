@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -277,3 +278,284 @@ background: linear-gradient(to right, #FFEB3B, #000f99, #DB0000);
   </section>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pines Colombianos</title>
+  <style>
+    /* Estilos generales */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff; /* Fondo blanco */
+      color: #333; /* Texto oscuro para buen contraste */
+    }
+
+    /* Contenedor principal */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #f4f4f4; /* Fondo claro */
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    }
+
+    header .logo h1 {
+font-size: 36px;
+font-weight: bold;
+background: linear-gradient(to right, #FFEB3B, #000f99, #DB0000);
+  -webkit-background-clip: text; /* Hace que el gradiente se aplique solo al texto */
+  color: transparent; /* Hace el texto transparente para que se vea el gradiente */
+}
+
+
+    /* Estilo del enlace "Más Información" */
+    header .more-info {
+      font-size: 16px;
+    }
+
+    header .more-info a {
+      color: #2d9cdb; /* Color azul para el enlace */
+      text-decoration: none; /* Sin subrayado por defecto */
+      font-weight: 500; /* Peso de la fuente */
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    header .more-info a:hover {
+      color: #1d7aa3; /* Cambia a un azul más oscuro */
+      text-decoration: underline; /* Subraya el texto al pasar el mouse */
+    }
+
+    /* Sección de productos */
+    .product-list {
+      display: flex;
+      justify-content: center; /* Centra los productos */
+      align-items: center; /* Alinea verticalmente */
+      padding: 40px 0;
+      gap: 20px;
+      flex-wrap: wrap; /* Permite que los productos se ajusten en varias filas en pantallas más pequeñas */
+    }
+
+    .product {
+      background-color: #f9f9f9; /* Fondo blanco para los productos */
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      flex: 0 0 auto;
+      width: 18%; /* Ajusta el tamaño de los productos */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra suave para los productos */
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid rgb(71, 64, 64);
+      text-decoration: none;
+    }
+
+    .product:hover {
+      transform: translateY(-5px); /* Efecto hover para destacar el producto */
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      margin-top: 15px;
+    }
+
+    .product-details h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333; /* Título oscuro */
+    }
+
+    .product-details .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .product-details .price del {
+      color: red; /* Precio original tachado en color rojo */
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .product-details .price .new-price {
+      color: #2d9cdb; /* Nuevo precio en azul */
+      font-size: 22px;
+    }
+
+    .product-details .buy-button {
+      background-color: #2d9cdb; /* Color del botón */
+      color: #fff;
+      font-size: 18px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-details .buy-button:hover {
+      background-color: #1d7aa3; /* Color del botón cuando se pasa el ratón */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .product {
+        width: 22%; /* Ajusta el tamaño para pantallas medianas */
+      }
+    }
+
+    @media (max-width: 992px) {
+      .product {
+        width: 28%; /* Ajusta el tamaño para pantallas más pequeñas */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .product {
+        width: 45%; /* Ajusta el tamaño para dispositivos más pequeños */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product {
+        width: 90%; /* Para pantallas muy pequeñas */
+      }
+
+      header .logo h1 {
+        font-size: 28px; /* Reduce el tamaño del texto en pantallas pequeñas */
+      }
+
+      header .more-info {
+        font-size: 14px; /* Reduce el tamaño del texto del enlace */
+      }
+    }
+
+    .product a {
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Pines Colombianos</h1>
+      </div>
+      <div class="more-info">
+        <a href="#">Más Información</a> <!-- Link de Más Información -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="product-list">
+    <!-- Pin 1 -->
+    <a href="pin1.html" class="product">
+      <div class="product-image">
+        <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 1" />
+      </div>
+      <div class="product-details">
+        <h2>Pin Netflix</h2>
+        <p class="price">
+          <del>$20.000</del><br>
+          <span class="new-price">$17.000</span>
+        </p>
+        <button class="buy-button">Comprar ahora</button>
+      </div>
+    </a>
+    <!-- Pin 2 -->
+    <a href="pin2.html" class="product">
+      <div class="product-image">
+        <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 2" />
+      </div>
+      <div class="product-details">
+        <h2>Pin Netflix</h2>
+        <p class="price">
+          <del>$30.000</del><br>
+          <span class="new-price">$26.000</span>
+        </p>
+        <button class="buy-button">Comprar ahora</button>
+      </div>
+    </a>
+    <!-- Pin 3 -->
+    <a href="pin3.html" class="product">
+      <div class="product-image">
+        <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
+      </div>
+      <div class="product-details">
+        <h2>Pin Netflix</h2>
+        <p class="price">
+          <del>$35.000</del><br>
+          <span class="new-price">$33.000</span>
+        </p>
+        <button class="buy-button">Comprar ahora</button>
+      </div>
+    </a>
+    <!-- Pin 4 -->
+    <a href="pin4.html" class="product">
+        <div class="product-image">
+          <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
+        </div>
+        <div class="product-details">
+          <h2>Pin Netflix</h2>
+          <p class="price">
+            <del>$40.000</del><br>
+            <span class="new-price">$37.000</span>
+          </p>
+          <button class="buy-button">Comprar ahora</button>
+        </div>
+      </a>
+      <!-- Producto 5 -->
+    <a href="pin5.html" class="product">
+        <div class="product-image">
+          <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
+        </div>
+        <div class="product-details">
+          <h2>Pin Netflix</h2>
+          <p class="price">
+            <del>$50.000</del><br>
+            <span class="new-price">$45.000</span>
+          </p>
+          <button class="buy-button">Comprar ahora</button>
+        </div>
+      </a>
+
+      <!-- Venta de Metodo -->
+    <a href="metodo.html" class="product">
+        <div class="product-image">
+          <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
+        </div>
+        <div class="product-details">
+          <h2>Venta de Metodo</h2>
+          <p class="price">
+            <span class="new-price">$350.000</span>
+          </p>
+          <button class="buy-button">Comprar ahora</button>
+        </div>
+      </a>
+  </section>
+</body>
+</html>
+>>>>>>> ebaba4661013008794cf92f4c0a449aa4aff1b76
