@@ -37,27 +37,25 @@
     }
 
     header .logo h1 {
-font-size: 36px;
-font-weight: bold;
-background: linear-gradient(to right, #FFEB3B, #000f99, #DB0000);
-  -webkit-background-clip: text; /* Hace que el gradiente se aplique solo al texto */
-  color: transparent; /* Hace el texto transparente para que se vea el gradiente */
-}
+      font-size: 36px;
+      font-weight: bold;
+      background: linear-gradient(to right, #FFEB3B, #000f99, #DB0000);
+      -webkit-background-clip: text; /* Hace que el gradiente se aplique solo al texto */
+      color: transparent; /* Hace el texto transparente para que se vea el gradiente */
+    }
 
-
-    /* Estilo del enlace "Más Información" */
-    header .more-info {
+    .more-info {
       font-size: 16px;
     }
 
-    header .more-info a {
+    .more-info a {
       color: #2d9cdb; /* Color azul para el enlace */
       text-decoration: none; /* Sin subrayado por defecto */
       font-weight: 500; /* Peso de la fuente */
       transition: color 0.3s ease, text-decoration 0.3s ease;
     }
 
-    header .more-info a:hover {
+    .more-info a:hover {
       color: #1d7aa3; /* Cambia a un azul más oscuro */
       text-decoration: underline; /* Subraya el texto al pasar el mouse */
     }
@@ -108,18 +106,19 @@ background: linear-gradient(to right, #FFEB3B, #000f99, #DB0000);
     .product-details .price {
       font-size: 22px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
-    .product-details .price del {
-      color: red; /* Precio original tachado en color rojo */
-      font-size: 18px;
-      margin-right: 10px;
+    /* Estilo para productos disponibles */
+    .availability.available {
+      color: green;
+      font-weight: bold;
     }
 
-    .product-details .price .new-price {
-      color: #2d9cdb; /* Nuevo precio en azul */
-      font-size: 22px;
+    /* Estilo para productos agotados */
+    .availability.out-of-stock {
+      color: red;
+      font-weight: bold;
     }
 
     .product-details .buy-button {
@@ -160,18 +159,17 @@ background: linear-gradient(to right, #FFEB3B, #000f99, #DB0000);
       .product {
         width: 90%; /* Para pantallas muy pequeñas */
       }
-
-      header .logo h1 {
-        font-size: 28px; /* Reduce el tamaño del texto en pantallas pequeñas */
-      }
-
-      header .more-info {
-        font-size: 14px; /* Reduce el tamaño del texto del enlace */
-      }
     }
 
     .product a {
-        text-decoration: none;
+      text-decoration: none;
+    }
+    del {
+      color: red;
+      font-size: 16px;
+    }
+    .new-price {
+      color: green;
     }
   </style>
 </head>
@@ -191,89 +189,101 @@ background: linear-gradient(to right, #FFEB3B, #000f99, #DB0000);
   <!-- Product Section -->
   <section class="product-list">
     <!-- Pin 1 -->
-    <a href="pin1.html" class="product">
-      <div class="product-image">
-        <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 1" />
-      </div>
-      <div class="product-details">
-        <h2>Pin Netflix</h2>
-        <p class="price">
-          <del>$20.000</del><br>
-          <span class="new-price">$17.000</span>
-        </p>
-        <button class="buy-button">Comprar ahora</button>
-      </div>
-    </a>
-    <!-- Pin 2 -->
-    <a href="pin2.html" class="product">
-      <div class="product-image">
-        <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 2" />
-      </div>
-      <div class="product-details">
-        <h2>Pin Netflix</h2>
-        <p class="price">
-          <del>$30.000</del><br>
-          <span class="new-price">$26.000</span>
-        </p>
-        <button class="buy-button">Comprar ahora</button>
-      </div>
-    </a>
-    <!-- Pin 3 -->
-    <a href="pin3.html" class="product">
-      <div class="product-image">
-        <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
-      </div>
-      <div class="product-details">
-        <h2>Pin Netflix</h2>
-        <p class="price">
-          <del>$35.000</del><br>
-          <span class="new-price">$33.000</span>
-        </p>
-        <button class="buy-button">Comprar ahora</button>
-      </div>
-    </a>
-    <!-- Pin 4 -->
-    <a href="pin4.html" class="product">
-        <div class="product-image">
-          <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
-        </div>
-        <div class="product-details">
-          <h2>Pin Netflix</h2>
-          <p class="price">
-            <del>$40.000</del><br>
-            <span class="new-price">$37.000</span>
-          </p>
-          <button class="buy-button">Comprar ahora</button>
-        </div>
-      </a>
-      <!-- Producto 5 -->
-    <a href="pin5.html" class="product">
-        <div class="product-image">
-          <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
-        </div>
-        <div class="product-details">
-          <h2>Pin Netflix</h2>
-          <p class="price">
-            <del>$50.000</del><br>
-            <span class="new-price">$45.000</span>
-          </p>
-          <button class="buy-button">Comprar ahora</button>
-        </div>
-      </a>
+<a href="pin1.html" class="product">
+  <div class="product-image">
+    <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 1">
+  </div>
+  <div class="product-details">
+    <h2>Pin Netflix</h2>
+    <p class="availability out-of-stock">Agotado</p>
+    <p class="price">
+      <del>$20.000</del><br>
+      <span class="new-price">$17.000</span>
+    </p>
+    <button class="buy-button">Comprar ahora</button>
+  </div>
+</a>
 
-      <!-- Venta de Metodo -->
-    <a href="metodo.html" class="product">
-        <div class="product-image">
-          <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3" />
-        </div>
-        <div class="product-details">
-          <h2>Venta de Metodo</h2>
-          <p class="price">
-            <span class="new-price">$350.000</span>
-          </p>
-          <button class="buy-button">Comprar ahora</button>
-        </div>
-      </a>
+<!-- Pin 2 -->
+<a href="pin2.html" class="product">
+  <div class="product-image">
+    <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 2">
+  </div>
+  <div class="product-details">
+    <h2>Pin Netflix</h2>
+    <p class="availability out-of-stock">Agotado</p>
+    <p class="price">
+      <del>$30.000</del><br>
+      <span class="new-price">$26.000</span>
+    </p>
+    <button class="buy-button" disabled>Comprar ahora</button>
+  </div>
+</a>
+
+<!-- Pin 3 -->
+<a href="pin3.html" class="product">
+  <div class="product-image">
+    <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 3">
+  </div>
+  <div class="product-details">
+    <h2>Pin Netflix</h2>
+    <p class="availability out-of-stock">Agotado</p>
+    <p class="price">
+      <del>$35.000</del><br>
+      <span class="new-price">$33.000</span>
+    </p>
+    <button class="buy-button">Comprar ahora</button>
+  </div>
+</a>
+
+<!-- Pin 4 -->
+<a href="pin4.html" class="product">
+  <div class="product-image">
+    <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 4">
+  </div>
+  <div class="product-details">
+    <h2>Pin Netflix</h2>
+    <p class="availability out-of-stock">Agotado</p>
+    <p class="price">
+      <del>$40.000</del><br>
+      <span class="new-price">$37.000</span>
+    </p>
+    <button class="buy-button">Comprar ahora</button>
+  </div>
+</a>
+
+<!-- Pin 5 -->
+<a href="pin5.html" class="product">
+  <div class="product-image">
+    <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto 5">
+  </div>
+  <div class="product-details">
+    <h2>Pin Netflix</h2>
+    <p class="availability out-of-stock">Agotado</p>
+    <p class="price">
+      <del>$50.000</del><br>
+      <span class="new-price">$45.000</span>
+    </p>
+    <button class="buy-button" disabled>Comprar ahora</button>
+  </div>
+</a>
+
+<!-- Producto 6 - Venta de Método -->
+<a href="metodo.html" class="product">
+  <div class="product-image">
+    <img src="https://i0.wp.com/yourpremiumpass.com/wp-content/uploads/2023/06/NET-COL.webp?fit=800%2C800&ssl=1" alt="Producto Método">
+  </div>
+  <div class="product-details">
+    <h2>Venta de Método</h2>
+    <p class="availability available">Disponible</p>
+    <p class="price">
+      <span class="new-price">$350.000</span>
+    </p>
+    <button class="buy-button">Comprar ahora</button>
+  </div>
+</a>
+
+    </div>
   </section>
 </body>
 </html>
